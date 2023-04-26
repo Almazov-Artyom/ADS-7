@@ -28,11 +28,6 @@ class TPQueue {
 
  public:
     TPQueue(): head(nullptr) {}
-    ~TPQueue() {
-        while (head) {
-            pop();
-        }
-    }
     void push(const T& value) {
         if (!head) {
             addHead(value);
